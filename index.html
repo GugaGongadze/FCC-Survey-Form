@@ -8,6 +8,73 @@
 </head>
 <body>
 
+    <h1 id=title>Survey Form</h1>
+    <p id="description">Let us know how you can improve freCodeCamp</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+
+        <label for="number" id="number-label">Age</label>
+        <input type="number" name="number" id="number" min="18" max="100" placeholder="Age" required>
+
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select name="dropdown" id="dropdown">
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="notsay">Prefer Not To Say</option>
+            <option value="other">Other</option>
+        </select>
+
+        <p>How likely is that you would recommend freeCodeCamp to a friend</p>
+        <input type="radio" name="recommend" value="definitely" id="definitely">
+        <label for="definitely">Definitely</label>
+        <input type="radio" name="recommend" value="maybe" id="maybe">
+        <label for="maybe">Maybe</label>
+        <input type="radio" name="recommend" value="notsure" id="notsure">
+        <label for="notsure">Not Sure</label>
+
+        <input type="checkbox" name="front" id="front" value="front">
+        <label for="front">Front-end Projects</label>
+
+        <input type="checkbox" name="back" id="back" value="back">
+        <label for="back">Back-end Projects</label>
+
+        <input type="checkbox" name="dataviz" id="dataviz" value="dataviz">
+        <label for="dataviz">Data Visualization</label>
+
+        <input type="checkbox" name="challenges" id="challenges" value="challenges">
+        <label for="challenges">Challenges</label>
+
+        <input type="checkbox" name="osc" id="osc" value="osc">
+        <label for="osc">Open Source Community</label>
+
+        <input type="checkbox" name="gitter" id="gitter" value="gitter">
+        <label for="gitter">Gitter help rooms</label>
+
+        <input type="checkbox" name="videos" id="videos" value="videos">
+        <label for="videos">Videos</label>
+
+        <input type="checkbox" name="meetups" id="meetups" value="meetups">
+        <label for="meetups">City Meetups</label>
+
+        <input type="checkbox" name="wiki" id="wiki" value="wiki">
+        <label for="wiki">Wiki</label>
+
+        <input type="checkbox" name="forum" id="forum" value="forum">
+        <label for="forum">Forum</label>
+
+        <input type="checkbox" name="courses" id="courses" value="courses">
+        <label for="courses">Additional Courses</label>
+
+        <textarea name="comments" id="comments" cols="30" rows="5">Enter your comments here...</textarea>
+
+        <button id="submit">Submit</button>
+    </form>
+
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="./scripts.js"></script>
